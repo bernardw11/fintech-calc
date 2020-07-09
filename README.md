@@ -1,6 +1,5 @@
-# Python Project Template
-
-This is a template repository. That means you can make a copy of it using the "Use This Template" button, and you'll get a prompt to create your own repository based on this one. THEN you can clone it down.
+## 3-D TIC TAC TOE LET'S GOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+github notes below
 
 ## Committing
 
