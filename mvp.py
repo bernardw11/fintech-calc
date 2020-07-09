@@ -6,9 +6,12 @@ board = [
 ]
 
 def run(board):
+    print("\nWELCOME TO THE MINIMUM VIABLE PRODUCT OF OUR (SOON TO BE) 3-D TIC TAC TOE")
     turn = "x"
     while not game_results(board):
+        print("\n")
         print_board(board)
+        print("\n")
         print(f"IT IS PLAYER {turn}'s TURN!!!!!!!!")
         
         i = int(input("Choose a row number: "))
@@ -24,9 +27,9 @@ def run(board):
         else:
             turn = "x"
     if game_results(board) == "tie":
-        print("TIE GAME")
+        print("\nTIE GAME")
     else:
-        print(f"{game_results(board)} wins!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        print(f"\n{game_results(board)} wins!!!!!!!!!!!!!!!!!!!!!!!!!!")
     print_board(board)
 
 def is_legal(i, j, board):
@@ -49,10 +52,10 @@ def game_results(board):
     return "tie"
 
 def print_board(board):
-    print(" 1 2 3")
+    print("  1 2 3")
     line = "|"
-    output = [str(i + 1) + line.join(board[i]) for i in range(3)]
-    linebreak = "\n -----\n"
+    output = [str(i + 1) + " " + line.join(board[i]) for i in range(3)]
+    linebreak = "\n  -----\n"
     print(linebreak.join(output))
 
 
